@@ -1,0 +1,3 @@
+{"name":"Nike Jordan","price":25000,"photo":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0f62d74a-4220-4326-b3bd-e472e560f295/zion-1-sp-zapatillas-de-baloncesto-3KZmvv.png","id":1}
+{"name":"Nike Air Force","price":21000,"photo":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/f2ff7f7a-0e13-4148-8eb4-60b83e86f99b/air-force-1-07-lv8-zapatillas-TqxL1x.png","id":2}
+{"name":"Nike Air Max","price":19000,"photo":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/1846fae2-3f84-4bef-a266-af535b0f52c6/air-max-90-zapatillas-SlFTWq.png","id":3}{"name":"Nikess","price":"40000","username":"Carmelo","id":4}

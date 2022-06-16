@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="m-3 p-3">
+
+    <h2 class="text-center mb-4">Agrega un producto</h2>
+
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="name" class="form-label">Nombre del producto:</label>
+            <input name="name" type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-4">
+            <label for="price" class="form-label">Precio:</label>
+            <input name="price" type="number" class="form-control" id="price" required>
+        </div>
+        <!-- <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Foto URL:</label>
+            <input name="photo" type="url" class="form-control" id="photo" required>
+        </div> -->
+        <!-- <div class="col-md-1">
+            <label for="validationDefault04" class="form-label">ID:</label>
+            <input type="number" class="form-control" id="validationDefault04" required>  
+        </div> -->
+        <div class="col-12">
+            <button id="form" class="btn btn-primary">Guardar</button>
+        </div>
+    </form >
+
+    
+    <!-- <div class="row g-3">
+        <div class="col-md-4">
+            <label for="username" class="form-label">Ingrese su Nick:</label>
+            <input name="username" type="text" class="form-control " id="username" >
+            <div id="error"></div>
+            <button disabled id="ingreso" class="btn btn-primary">Ingresar</button>
+        </div>
+    </div> -->
+    <h2 class="text-center mb-4">Listado de productos</h2>
+    <h2 id="username"></h2>
+    <div id="products"></div>
+
+    <div id="chat"></div>
+    <div>
+        <form>
+            <input name="msn" id="msn" placeholder="escribe tu mensaje..">
+            <button id="send">Enviar</button>
+        </form>
+    </div>
+    
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../public/front.js"></script>
+</body>
+</html>
