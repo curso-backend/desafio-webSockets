@@ -13,7 +13,9 @@ class Contenedor {
             console.log(`Error Initializing ${error}`)
         }
     }
-
+    getAll2(){
+        return this.data
+    }
     async init() {
         this.data = await this.getAll()
     }

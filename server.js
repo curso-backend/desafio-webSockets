@@ -14,8 +14,8 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/public', express.static(__dirname + '/public'));
 
-const contenedorProducts = new Contenedor('products.txt')
-const contenedorMessages = new Contenedor('messages.txt')
+const contenedorProducts = new Contenedor('products.json')
+const contenedorMessages = new Contenedor('messages.json')
 
 app.get('/', (req, res) => {
     res.render('index')
@@ -29,12 +29,12 @@ app.post('/', (req, res) => {
 
 app.get('/products', (req, res) => {
     res.render('products', {
-        products: contenedorProducts.init()
+        products: contenedorProducts.getAll2()
     })
 })
 app.get('/messages', (req, res) => {
     res.render('messages', {
-        messages: contenedorMessages.init()
+        messages: contenedorMessages.getAll2()
     })
 })
 
