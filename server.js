@@ -1,5 +1,5 @@
 const express = require('express');
-const Container = require('./container')
+const Contenedor = require('./container')
 const http = require('http');
 const { Server } = require('socket.io');
 
@@ -14,8 +14,8 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/public', express.static(__dirname + '/public'));
 
-const contenedorProducts = new Container('products.txt')
-const contenedorMessages = new Container('messages.txt')
+const contenedorProducts = new Contenedor('products.txt')
+const contenedorMessages = new Contenedor('messages.txt')
 
 app.get('/', (req, res) => {
     res.render('index')
@@ -29,12 +29,12 @@ app.post('/', (req, res) => {
 
 app.get('/products', (req, res) => {
     res.render('products', {
-        products: contenedorProducts.getAll()
+        products: contenedorProducts.init()
     })
 })
 app.get('/messages', (req, res) => {
     res.render('messages', {
-        messages: contenedorMessages.getAll()
+        messages: contenedorMessages.init()
     })
 })
 
